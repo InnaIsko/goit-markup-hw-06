@@ -436,6 +436,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-mailing">
+          <form name="mailing form">
+            <div class="footer-mailing-list">
+              <div>
+                <p class="footer-entry">Подпишитесь на рассылку</p>
+                <label class="footer-mailing-text" for="">
+                  <input
+                    class="footer-mailing-input"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+              </div>
+              <button class="footer-mailin-button" type="submit">
+                Подписаться
+                <svg class="footer-mailing-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send-1"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -445,6 +468,48 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form name="signup-form">
+          <ul>
+            <li class="modal-list">
+              <label class="modal-label">
+                <span class="modal-text">Имя</span>
+                <input class="modal-input" type="text" />
+              </label>
+            </li>
+            <li class="modal-list">
+              <label class="modal-label">
+                <span class="modal-text">Телефон</span>
+                <input class="modal-input" type="tel" />
+              </label>
+            </li>
+            <li class="modal-list">
+              <label class="modal-label">
+                <span class="modal-text">Почта</span>
+                <input class="modal-input" type="email" />
+              </label>
+            </li>
+            <li class="modal-list">
+              <label class="modal-label">
+                <span class="modal-text">Комментарий</span>
+                <textarea name="" cols="30" rows="10"></textarea>
+              </label>
+            </li>
+            <li class="modal-list">
+              <label class="modal-label">
+                <input
+                  class="modal-input"
+                  type="radio"
+                  name="agree"
+                  value="Соглашаюсь с рассылкой и принимаю Условия договора"
+                />
+              </label>
+            </li>
+          </ul>
+          <button class="footer-mailin-button modal-button-send" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
