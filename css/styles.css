@@ -542,7 +542,7 @@ img {
   line-height: 0.8;
   color: var(--footer-text-primary);
 
-  min-width: 388px;
+  min-width: 358px;
   min-height: 50px;
   padding-left: 16px;
   background-color: var(--secondary-background);
@@ -555,6 +555,13 @@ img {
 .footer-mailing-list {
   display: flex;
   align-items: flex-end;
+}
+
+.footer-mailing-text input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .logo-header {
@@ -644,13 +651,21 @@ img {
   min-width: 200px;
   max-height: 50px;
   padding: 10px 28px 10px 29px;
-  margin-left: 20px;
+  margin-left: 12px;
   border-radius: 4px;
   border-width: 0;
   cursor: pointer;
   background-color: var(--accent-color);
   color: var(--footer-text-primary);
   display: flex;
+}
+
+.button-icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-close:hover .button-icon-close,
+.button-close:focus .button-icon-close {
+  fill: var(--accent-color);
 }
 
 .caption {
@@ -809,6 +824,8 @@ img {
 .modal-label-consent {
   display: flex;
   align-items: center;
+
+  margin-left: 13px;
 }
 
 .modal-label textarea::placeholder {
@@ -841,17 +858,12 @@ img {
 .modal-consent-link {
   color: var(--accent-color);
   text-decoration: underline;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .modal-checkbox {
   margin-top: 20px;
-}
-
-.footer-mailing-text input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-close {
